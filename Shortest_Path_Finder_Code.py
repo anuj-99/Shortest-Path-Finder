@@ -58,7 +58,7 @@ class Set:
 
 def heuristic(a, b):
     """Our heuristic function"""
-    dist = abs(a.i - b.i) + abs(a.j - b.j)
+    dist = ((a.i - b.i)**2 + (a.j - b.j)**2)**0.5
     return dist
 
 
